@@ -1,10 +1,27 @@
 import React from "react";
+import { Fade } from "react-reveal";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
-function Footer(){
+function Footer() {
+  const {text} = useTypewriter({
+    words: ["Made with ❤️ by Vinod "],
+    loop: 100,
+    onLoopDone: () => console.log(`loop completed after 3 runs.`),
+  })
+
     return(
-        <div class="text-center p-6 bg-black footer">
-        <span class="text-white">&copy; 2022 Copyright - </span>
-        <a class="link-underline text-white font-bold" href="https://rahulkarda.netlify.app">Rahul Karda</a>
+      <div class="text-center p-6 bg-black footer">
+        <Fade bottom duration={1000} distance="40px">
+        <h2 className="text-2xl sm:text-4xl font-bold text-white">
+          
+       
+          
+            
+            {text}
+            <Cursor />
+     
+         </h2> </Fade>
+        
       </div>
     )
 }

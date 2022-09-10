@@ -69,22 +69,22 @@ body {
     min-height: 100vh;
   }
 
-  .about,
-  .contact,
-  .portfolio,
-  .experience,
-  .home {
+  .about1,
+  .contact1,
+  .portfolio1,
+  .experience1,
+  .home1 {
     text-align: center;
     height: 100%;
   }
 
-  .about,
-  .portfolio,
-  .experience {
+  .about1,
+  .portfolio1,
+  .experience1 {
     margin-top: 10%;
   }
 
-  .home img {
+  .home1 img {
     margin-top: 25%;
   }
 

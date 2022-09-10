@@ -1,51 +1,60 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/vin.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import { useTypewriter, Cursor} from 'react-simple-typewriter'
 
 const Home = () => {
+  const {text} = useTypewriter({
+    words: [" I'm a Full Stack Developer"],
+    loop: 100,
+    Cursor:"|",
+    onLoopDone: () => console.log(`loop completed after 3 runs.`),
+  })
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home"
+      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home1 "
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="small-screen hidden">
           <img
             src={HeroImage}
             alt="profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+          
+            className="rounded-full mx-auto w-2/3 md:w-full"
           />
         </div>
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Web Developer
+        <div className="flex flex-col justify-center h-full  w-2/3">
+          <h2 className="text-4xl text-white font-bold">Hello,  my name is</h2>
+          <h2 className="text-4xl sm:text-7xl font-bold text-white mt-4 ">
+           Vinod Chaudhari
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            I have 2 years of experience building websites and desgining software.
-            I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
-          </p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mt-3">
+            {text}
+            <Cursor />
+          </h2>
+         
 
           <div className="portfolio-btn">
             <Link
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-white w-fit px-6 py-3 my-4 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
-              Portfolio
+              Projects
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
             </Link>
           </div>
         </div>
-        <div className="big-screen">
+        <div className="big-screen hover:scale-110 duration-500 pl-10 flex justify-end w-1/3 ">
           <img
             src={HeroImage}
             alt="profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-full mx-auto  w-2/3 md:w-4/5 border text-end "
           />
         </div>
         

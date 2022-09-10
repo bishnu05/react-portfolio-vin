@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal"
 
 //function for form reset
 function handleSubmit(e){
@@ -7,18 +8,20 @@ function handleSubmit(e){
   }, 3000);
 }
 
-const Contact = () => {
+const Contact = () => {  
   return (
     <div
       name="contact"
-      className="contact w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className="contact w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white lg:pt-32 contact1"
     >
+       <Fade top duration={1000} distance="40px">  
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
+          <p className="py-6">Take A Cofee And Chat 
+          With Me</p>
         </div>
         
         <div className=" flex justify-center items-center">
@@ -26,13 +29,13 @@ const Contact = () => {
             onSubmit={handleSubmit}
             name="contact"
             method="POST"
-            action="https://getform.io/f/a5bbeab4-3505-457e-bcda-603c8bc15711"
+            action="https://getform.io/f/dc8c4f2a-3ec5-4975-b3bd-f0fd883b6636"
             className=" flex flex-col w-full md:w-1/2"
           >
             <input
               type="text"
               name="name"
-              placeholder="Enter your name"
+              placeholder="Enter your name"  
               required
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
@@ -56,9 +59,10 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </div>
+        </div>
+        </Fade>
     </div>
   );
 };
 
-export default Contact;
+export default Contact;    

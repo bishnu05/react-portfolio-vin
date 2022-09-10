@@ -1,55 +1,66 @@
 import React from "react";
-import api from "../assets/portfolio/api.jpg";
-import apod from "../assets/portfolio/apod.jpg";
-import iptracker from "../assets/portfolio/iptracker.jpg";
-import nftportal from "../assets/portfolio/nftportal.jpg";
-import webpostman from "../assets/portfolio/webpostman.jpg";
-import waveportal from "../assets/portfolio/waveportal.jpg";
+import jcrew from "../assets/portfolio/jcrew.png";
+import lifestore from "../assets/portfolio/lifestore.png";
+import mynthresa from "../assets/portfolio/mynthresa.png";
+import buffer from "../assets/portfolio/buffer.png"
 
+import { Fade } from "react-reveal"
+import { FaEye,FaGithub} from "react-icons/fa";
 const Portfolio = () => {
   const portfolios = [
+
+  
     {
+
       id: 1,
-      src: api,
-      link: 'https://crypto-info-api.herokuapp.com/',
-      repo: 'https://github.com/rahulkarda/crypto-info-api'
-    },
+      src: buffer,
+      link: 'https://vinodproject.vercel.app/',
+      repo: 'https://github.com/vin9012d/moral-day-3198',
+      text:"Lifestore site clone",
+      skills: "React, Redux, React-redux, NPM packages,Javascript, Chakra UI, CSS",
+      desc:`This project is clone of Buffer.com   which is digital marketing management site. Here I implemented some functionalities like genetate the graph from data,connect the channels..etc  `,
+      title:"Buffer Clone"
+    
+
+  },
     {
       id: 2,
-      src: webpostman,
-      link: 'https://webpostman.netlify.app/',
-      repo: 'https://github.com/rahulkarda/Web-Postman'
+      src: lifestore,
+      link: 'https://vinodproject.vercel.app/',
+      repo: 'https://github.com/vin9012d/moral-day-3198',
+      text: "Lifestore site clone",
+      skills: "React, NPM packages,Javascript, Chakra UI, CSS",
+      desc: "This project is about building an online e-commerce store. Here with the use of React I implemeted the functionalities of an e-commerce website like filtering,add to cart,checkout..etc  ",
+      title:"Lifestore Clone"
     },
     {
       id: 3,
-      src: apod,
-      link: 'https://apodbyrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/NASA-APOD'
+      src: jcrew,
+      link: 'https://storied-platypus-db74f4.netlify.app/',
+      repo: 'https://github.com/vin9012d/Project-unit-3',
+      text: "Jcrew site clone",
+      skills: "Javascript,HTML,CSS",
+      desc: "This project is about building an online e-commerce store. We implemeted all the functionality of an e-commerce store. Here I implemented the checkout with all the functionality as real time application",
+      title:"Jcrew Clone"
     },
     {
       id: 4,
-      src: waveportal,
-      link: 'https://waveatrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/Wave-Portal'
-    },
-    {
-      id: 5,
-      src: nftportal,
-      link: 'https://nftportalbyrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/NFT-Portal'
-    },
-    {
-      id: 6,
-      src: iptracker,
-      link: 'https://trackmyip.netlify.app/',
-      repo: 'https://github.com/rahulkarda/IP-Address-Tracker'
-    },
+      src: mynthresa,
+      link: 'https://quiet-marzipan-8a0d28.netlify.app/',
+      repo: 'https://github.com/vin9012d/PROJECT-UNIT-2',
+      text: "Mynthresa site clone",
+      skills: "Javascript,HTML,CSS",
+      desc: "This project is about building an online e-commerce store. Here I implemeted all the functionalities of an e-commerce website like sorting,add to cart,checkout..etc  ",
+      title:"Mynthresa Clone"
+    }
+
+
   ];
 
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen portfolio"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white portfolio1 "
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -60,19 +71,24 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, link, repo }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
+          {portfolios.map(({ id, src, link, repo ,title,desc,skills}) => (
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-110">
+           <Fade top duration={1000} distance="40px">    <img
                 src={src}
                 alt="projects"
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={ () => window.open(link, '_blank')}>
-                  Demo
+                className="rounded-md hover:scale-110 duration-500 "
+              /> </Fade>
+              <div className="p-4">
+                <p className="text-center text-xl p-2" >{title}</p>
+                <p className="text-sm">{ desc}</p>
+                <p className="mt-5 text-sm">Tech Stack : { skills}</p>
+              </div>
+              <div className="flex m-auto items-center justify-between">
+                <button className=" px-6 py-1 m-4 duration-200 text-center   hover:scale-110" onClick={ () => window.open(link, '_blank')}>
+                  <FaEye size={30} />
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={ () => window.open(repo, '_blank')}>
-                  GitHub
+                <button className=" px-6 py-1 m-4 text-center duration-200 hover:scale-110 " onClick={ () => window.open(repo, '_blank')}>
+                  <FaGithub size={30} />
                 </button>
               </div>
             </div>

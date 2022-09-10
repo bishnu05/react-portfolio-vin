@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes ,FaEye} from "react-icons/fa";
 import { Link } from "react-scroll";
+
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -20,10 +21,11 @@ const NavBar = () => {
     },
     {
       id: 4,
-      link: "experience",
+      link: "skills",
     },
+    
     {
-      id: 5,
+      id: 6,
       link: "contact",
     },
   ];
@@ -32,14 +34,14 @@ const NavBar = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="https://rahulkarda.netlify.app">Rahul</a></h1> */}
-        <h1 className="text-5xl font-signature ml-2"><a className="link-underline link-underline-black" href="https://rahulkarda.netlify.app" target="_blank" rel="noreferrer">Rahul</a></h1>
+        <h1 className="text-5xl font-signature ml-2"><Link className="link-underline link-underline-black cursor-pointer" to={"home"} target="_blank" rel="noreferrer">Vinod</Link></h1>
       </div>
 
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
+            className="nav-links px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 hover:text-white duration-200 link-underline"
           >
             <Link to={link} smooth duration={500}>
               {link}
