@@ -14,6 +14,7 @@ import mongodb from "../assets/mongodb.png"
 import redux from "../assets/redux.png"
 import dsa from "../assets/dsa.png"
 import ts from "../assets/ts1.png"  
+import mongoose from "../assets/mongoose.png"
 
 
 import { Fade } from "react-reveal"
@@ -21,6 +22,51 @@ import { Fade } from "react-reveal"
 
 const Skills = () => {
   const techs = [
+  
+    {
+      id: 11,
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-500",
+    },  {
+      id: 5,
+      src: node,
+      title: "NodeJs",
+      style: "shadow-green-400",
+    },
+
+    {
+      id: 10,
+      src: express,
+      title: "Express",
+      style: "shadow-white",
+    },
+    {
+      id: 6,
+      src: mongoose,
+      title: "Mongoose",
+      style: "shadow-white",
+    },
+  
+    {
+      id: 12,
+      src: redux,
+      title: "Redux",
+      style: "shadow-purple-500",
+    },
+    {
+      id: 4,
+      src: reactImage,
+      title: "React",
+      style: "shadow-blue-600",
+    },
+  
+    {
+      id: 3,
+      src: javascript,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
+    },
     {
       id: 1,
       src: html,
@@ -33,30 +79,8 @@ const Skills = () => {
       title: "CSS",
       style: "shadow-blue-500",
     },
-    {
-      id: 3,
-      src: javascript,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: reactImage,
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 5,
-      src: node,
-      title: "NodeJs",
-      style: "shadow-green-400",
-    },
-    {
-      id: 6,
-      src: nextjs,
-      title: "Next JS",
-      style: "shadow-white",
-    },
+
+   
    
     {
       id: 8,
@@ -65,24 +89,8 @@ const Skills = () => {
       style: "shadow-gray-400",
     },
 
-    {
-      id: 10,
-      src: express,
-      title: "Express",
-      style: "shadow-white",
-    },
-    {
-      id: 11,
-      src: mongodb,
-      title: "MongoDB",
-      style: "shadow-green-500",
-    },
-    {
-      id: 12,
-      src: redux,
-      title: "Redux",
-      style: "shadow-purple-500",
-    },
+ 
+  
     {
       id: 13,
       src: dsa,

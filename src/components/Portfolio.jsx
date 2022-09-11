@@ -3,6 +3,8 @@ import jcrew from "../assets/portfolio/jcrew.png";
 import lifestore from "../assets/portfolio/lifestore.png";
 import mynthresa from "../assets/portfolio/mynthresa.png";
 import buffer from "../assets/portfolio/buffer.png"
+import sudoku from "../assets/portfolio/sudoku.png"
+import tictactoe from "../assets/portfolio/tictactoe.png"
 
 import { Fade } from "react-reveal"
 import { FaEye,FaGithub} from "react-icons/fa";
@@ -14,9 +16,9 @@ const Portfolio = () => {
 
       id: 1,
       src: buffer,
-      link: 'https://vinodproject.vercel.app/',
-      repo: 'https://github.com/vin9012d/moral-day-3198',
-      text:"Lifestore site clone",
+      link: 'https://bufferr.netlify.app/',
+      repo: 'https://github.com/vin9012d/Buffer_clone.git',
+      text:"Buffer site clone",
       skills: "React, Redux, React-redux, NPM packages,Javascript, Chakra UI, CSS",
       desc:`This project is clone of Buffer.com   which is digital marketing management site. Here I implemented some functionalities like genetate the graph from data,connect the channels..etc  `,
       title:"Buffer Clone"
@@ -26,8 +28,8 @@ const Portfolio = () => {
     {
       id: 2,
       src: lifestore,
-      link: 'https://vinodproject.vercel.app/',
-      repo: 'https://github.com/vin9012d/moral-day-3198',
+      link: 'https://lifestoreclone.vercel.app/',
+      repo: 'https://github.com/vin9012d/Lifestore_clone.git',
       text: "Lifestore site clone",
       skills: "React, NPM packages,Javascript, Chakra UI, CSS",
       desc: "This project is about building an online e-commerce store. Here with the use of React I implemeted the functionalities of an e-commerce website like filtering,add to cart,checkout..etc  ",
@@ -37,7 +39,7 @@ const Portfolio = () => {
       id: 3,
       src: jcrew,
       link: 'https://storied-platypus-db74f4.netlify.app/',
-      repo: 'https://github.com/vin9012d/Project-unit-3',
+      repo: 'https://github.com/vin9012d/Jcrew_clone.git',
       text: "Jcrew site clone",
       skills: "Javascript,HTML,CSS",
       desc: "This project is about building an online e-commerce store. We implemeted all the functionality of an e-commerce store. Here I implemented the checkout with all the functionality as real time application",
@@ -46,12 +48,32 @@ const Portfolio = () => {
     {
       id: 4,
       src: mynthresa,
-      link: 'https://quiet-marzipan-8a0d28.netlify.app/',
-      repo: 'https://github.com/vin9012d/PROJECT-UNIT-2',
+      link: 'https://mynthresaclone.netlify.app/',
+      repo: 'https://github.com/vin9012d/Mynthresa_clone.git',
       text: "Mynthresa site clone",
       skills: "Javascript,HTML,CSS",
       desc: "This project is about building an online e-commerce store. Here I implemeted all the functionalities of an e-commerce website like sorting,add to cart,checkout..etc  ",
       title:"Mynthresa Clone"
+    },
+    {
+      id: 5,
+      src: sudoku,
+      link: 'https://vinod-sudoku.netlify.app/',
+      repo: 'https://github.com/vin9012d/sudoku-game',
+      text: "Mynthresa site clone",
+      skills: "React,Javascript,HTML,CSS",
+      desc: "Sudoku consists of a 9 × 9 grid with numbers appearing in some of the squares. The object of the puzzle is to fill the remaining squares, using all the numbers 1–9 exactly once in each row, column, and the subgrid of 3 ×  3. ",
+      title:"Sudoku"
+    },
+    {
+      id: 6,
+      src: tictactoe,
+      link: 'https://vinod-sudokugame.netlify.app/',
+      repo: 'https://github.com/vin9012d/tic_toc_toe',
+      text: "Mynthresa site clone",
+      skills: "React,Javascript,HTML,CSS",
+      desc: "Tic-tac-toe is a game in which two players take turns in drawing either an `O' or  `X' in 1 square of a grid consisting of 9 squares. The winner is the first who to get three of the same symbols in a row.  ",
+      title:"Tic Tac Toe"
     }
 
 
@@ -59,13 +81,13 @@ const Portfolio = () => {
 
   return (
     <div
-      name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white portfolio1 "
+      name="projects"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white portfolio1 projects "
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
+            Projects
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
