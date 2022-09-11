@@ -38,7 +38,7 @@ const Portfolio = () => {
     {
       id: 3,
       src: jcrew,
-      link: 'https://storied-platypus-db74f4.netlify.app/',
+      link: 'http://jcrew-project-clone.netlify.app/',
       repo: 'https://github.com/vin9012d/Jcrew_clone.git',
       text: "Jcrew site clone",
       skills: "Javascript,HTML,CSS",
