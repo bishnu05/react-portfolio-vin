@@ -38,7 +38,7 @@ const Home = () => {
 
           <div className="portfolio-btn">
             <Link
-              to="portfolio"
+              to="projects"
               smooth
               duration={500}
               className="group text-white w-fit px-6 py-3 my-4 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
@@ -54,7 +54,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="profile"
-            className="rounded-full mx-auto  w-2/3 md:w-4/5 border text-end "
+            className="rounded-full mx-auto  w-2/3 md:w-4/5  text-end "
           />
         </div>
         

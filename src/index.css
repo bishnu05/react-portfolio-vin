@@ -57,18 +57,20 @@ body {
 }
 
 
-
 .nav-links {
-  text-underline-offset: 1rem;
+  text-underline-offset: 1rem;  
 }
 
-
+.contact1{
+  padding-bottom: 60px;
+}
 @media screen and (max-width: 900px) {
 
   #root {
     background: linear-gradient(rgb(31, 41, 55) 20%, black 20%, rgb(31, 41, 55) 65%, black 25%);
     min-height: 100vh;
   }
+
 
   .about1,
   .contact1,
@@ -82,7 +84,7 @@ body {
   .about1,
   .portfolio1,
   .experience1 {
-    margin-top: 10%;
+    margin-top: 10%;  
   }
 
   .home1 img {

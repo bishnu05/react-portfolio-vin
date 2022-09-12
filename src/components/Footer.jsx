@@ -10,7 +10,7 @@ function Footer() {
   })
 
     return(
-      <div class="text-center p-6 bg-black footer">
+      <div class="text-center p-4 bg-black footer">
         <Fade bottom duration={1000} distance="40px">
         <h2 className="text-2xl sm:text-4xl font-bold text-white">
           

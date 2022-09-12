@@ -68,7 +68,7 @@ const Portfolio = () => {
     {
       id: 6,
       src: tictactoe,
-      link: 'https://vinod-sudokugame.netlify.app/',
+      link: 'https://vinod-tictactoe.netlify.app/',
       repo: 'https://github.com/vin9012d/tic_toc_toe',
       text: "Mynthresa site clone",
       skills: "React,Javascript,HTML,CSS",
